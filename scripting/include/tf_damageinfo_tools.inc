@@ -4,15 +4,15 @@
 
 #define __tf_radius_damage_included
 
-methodmap Nosoop_CTakeDamageInfo < Handle {
-	public native Nosoop_CTakeDamageInfo(int inflictor, int attacker, float damage, int damagetype,
+methodmap TFDI_CTakeDamageInfo < Handle {
+	public native TFDI_CTakeDamageInfo(int inflictor, int attacker, float damage, int damagetype,
 			int weapon, const float damageForce[3] = NULL_VECTOR,
 			const float damagePosition[3] = NULL_VECTOR,
 			const float reportedPosition[3] = NULL_VECTOR, int damagecustom = 0);
 };
 
-methodmap Nosoop_CTFRadiusDamageInfo < Handle {
-	public native Nosoop_CTFRadiusDamageInfo(Nosoop_CTakeDamageInfo info, const float src[3], float radius,
+methodmap TFDI_CTFRadiusDamageInfo < Handle {
+	public native TFDI_CTFRadiusDamageInfo(TFDI_CTakeDamageInfo info, const float src[3], float radius,
 			int ignoreEntity = INVALID_ENT_REFERENCE, float blastJumpRadius = 0.0,
 			float forceScale = 1.0);
 	

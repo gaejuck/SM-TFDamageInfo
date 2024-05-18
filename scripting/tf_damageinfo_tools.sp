@@ -34,9 +34,9 @@ Handle g_SDKCallGameRulesRadiusDamage;
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max) {
 	RegPluginLibrary("tf2_damageinfo_tools");
 	
-	CreateNative("Nosoop_CTakeDamageInfo.Nosoop_CTakeDamageInfo", Native_TakeDamageInfoCreate);
-	CreateNative("Nosoop_CTFRadiusDamageInfo.Nosoop_CTFRadiusDamageInfo", Native_RadiusDamageInfoCreate);
-	CreateNative("Nosoop_CTFRadiusDamageInfo.Apply", Native_RadiusDamageInfoApply);
+	CreateNative("TFDI_CTakeDamageInfo.TFDI_CTakeDamageInfo", Native_TakeDamageInfoCreate);
+	CreateNative("TFDI_CTFRadiusDamageInfo.TFDI_CTFRadiusDamageInfo", Native_RadiusDamageInfoCreate);
+	CreateNative("TFDI_CTFRadiusDamageInfo.Apply", Native_RadiusDamageInfoApply);
 	
 	return APLRes_Success;
 }
